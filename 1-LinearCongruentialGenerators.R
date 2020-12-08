@@ -11,8 +11,8 @@ lcg <- function(a,c,m,len,z0) {
   }
 
 
-rnd <- lcg(a=3,c=0,z0=2,m=77,len=60)
-df <- data.frame(i=1:60,Z_i=rnd$Z,U_i = rnd$U)
+# rnd <- lcg(a=3,c=0,z0=2,m=77,len=60)
+# df <- data.frame(i=1:60,Z_i=rnd$Z,U_i = rnd$U)
 
 # hist(df$U_i,xlab="U_i",main="Histogram of U_i")
 
@@ -23,7 +23,7 @@ df <- data.frame(i=1:60,Z_i=rnd$Z,U_i = rnd$U)
 # plot(df$U_i,lag(df$U_i),xlab="U_i",ylab="U_(i-1)",main="U_i vs U_(i-1)")
 # 
 
-rnd <- lcg(a=2^16+3,c=0,z0=2,m=2^31,len=100000) #IBM's RANDU - RANDOM NUMBER GENARATOR PARAMETERS
-df <- data.frame(i=1:100000,Z_i=rnd$Z,U_i = rnd$U)
+# rnd <- lcg(a=2^16+3,c=0,z0=2,m=2^31,len=100000) #IBM's RANDU - RANDOM NUMBER GENARATOR PARAMETERS
+# df <- data.frame(i=1:100000,Z_i=rnd$Z,U_i = rnd$U)
 
 # hist(df$U_i)
